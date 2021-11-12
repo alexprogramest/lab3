@@ -1,3 +1,17 @@
+from random import randint
+import timeit
+import os
+
+
+def read_lines():
+    my_sum = 0
+    with open("text.txt") as f:
+        line = f.readline()
+        while line != '':
+            my_sum += int(line)
+            line = f.readline()
+
+
 def for_line():
     my_sum = 0
     with open("text.txt") as f:
